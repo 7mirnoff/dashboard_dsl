@@ -1,0 +1,56 @@
+{
+  "dashboard": {
+    "width": 1920,
+    "height": 1080,
+    "columns": 12,
+    "margin": 10,
+    "sections": [
+      {
+        "title": "Системные Показатели",
+        "graphs": [
+          {
+            "title": "Использование CPU и памяти",
+            "type": "Linear",
+            "position": {
+              "x": 1,
+              "y": 5,
+              "w": 1,
+              "h": 6
+            },
+            "colorScheme": ["#FF5733", "#33FF57"],
+            "metrics": ["CPU Usage", "Memory Usage"]
+          },
+          {
+            "title": "Дисковая Активность",
+            "type": "Bar",
+            "position": {
+              "x": 6,
+              "y": 12,
+              "w": 1,
+              "h": 6
+            },
+            "colorScheme": ["#33FF57", "#3357FF"],
+            "metrics": ["Disk Read", "Disk Write"]
+          }
+        ]
+      },
+      {
+        "title": "Сетевая Производительность",
+        "graphs": [
+          {
+            "title": "Сетевой Трафик",
+            "type": "Area",
+            "position": {
+              "x": 1,
+              "y": 12,
+              "w": 7,
+              "h": 12
+            },
+            "colorScheme": ["#FF5733", "#33FF57"],
+            "metrics": ["Network In", "Network Out"]
+          }
+        ]
+      }
+    ]
+  }
+}
